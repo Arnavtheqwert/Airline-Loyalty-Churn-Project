@@ -1,0 +1,151 @@
+Loyalty Number,Year,Month,Total Flights,Distance,Points Accumulated,Points Redeemed,Dollar Cost Points Redeemed,Province,City,Gender,Education,Salary,Marital Status,Loyalty Card,CLV,Strict_Churn
+100000,2025,10,5,5590,2235,1756,175.6,Alberta,Edmonton,Female,Doctorate,52323,Single,Star,17009,1
+100001,2025,10,8,6320,3344,29,2.9,Alberta,Edmonton,Female,Bachelor,90764,Single,Star,19869,0
+100002,2025,4,7,8694,2772,2251,225.1,Quebec,Quebec City,Female,Master,93442,Married,Nova,13049,0
+100003,2025,4,3,3924,723,27,2.7,Alberta,Calgary,Female,College,58142,Single,Star,5777,0
+100004,2025,8,9,9783,3987,121,12.1,Ontario,Ottawa,Female,Master,100393,Single,Nova,13052,0
+100005,2025,7,1,1040,539,346,34.6,Ontario,Ottawa,Female,Bachelor,46879,Single,Aurora,15068,1
+100006,2025,1,1,487,509,65,6.5,Ontario,Ottawa,Female,Doctorate,102550,Single,Nova,15549,0
+100007,2025,3,1,386,351,236,23.6,Ontario,Ottawa,Female,Master,99122,Single,Nova,15253,1
+100008,2025,1,0,0,0,0,0.0,Ontario,Toronto,Female,Bachelor,90585,Single,Nova,8700,0
+100009,2025,12,4,5680,1660,167,16.7,Quebec,Quebec City,Female,Master,77304,Single,Aurora,19448,1
+100010,2025,6,1,1476,377,5,0.5,Alberta,Edmonton,Male,Bachelor,74486,Single,Aurora,14759,1
+100011,2025,10,10,3430,3240,2826,282.6,Alberta,Calgary,Female,Doctorate,51899,Married,Star,16605,1
+100012,2025,2,5,3700,1040,329,32.9,Alberta,Edmonton,Female,College,54094,Married,Nova,13696,0
+100013,2025,2,8,8720,3200,2075,207.5,Alberta,Edmonton,Female,Master,81319,Single,Star,17267,1
+100014,2025,6,10,3460,4880,1119,111.9,British Columbia,Vancouver,Female,Doctorate,41409,Single,Aurora,19188,0
+100015,2025,7,0,0,0,0,0.0,Ontario,Toronto,Male,Bachelor,91195,Married,Aurora,7339,1
+100016,2025,3,1,970,442,18,1.8,Ontario,Toronto,Female,Bachelor,66444,Single,Aurora,9631,0
+100017,2025,12,5,5885,1245,613,61.3,British Columbia,Victoria,Female,Doctorate,113667,Married,Aurora,17067,1
+100018,2025,3,10,5840,3320,1471,147.1,British Columbia,Vancouver,Female,Doctorate,44867,Single,Star,11221,1
+100019,2025,3,8,9112,2432,1215,121.5,Ontario,Toronto,Female,College,77177,Single,Aurora,10000,1
+100020,2025,7,4,3064,1932,483,48.3,Ontario,Ottawa,Female,Doctorate,84922,Married,Nova,6851,0
+100021,2025,11,6,5196,3354,1806,180.6,Ontario,Toronto,Female,College,91635,Married,Aurora,5059,1
+100022,2025,11,0,0,0,0,0.0,Ontario,Ottawa,Male,Master,60540,Single,Nova,7359,1
+100023,2025,10,8,6144,2000,937,93.7,British Columbia,Victoria,Female,Bachelor,100130,Single,Aurora,9557,0
+100024,2025,11,6,5964,2730,2282,228.2,Alberta,Edmonton,Male,College,98687,Married,Nova,10197,1
+100025,2025,12,7,2751,2422,1249,124.9,Quebec,Montreal,Female,Master,113088,Single,Star,6897,1
+100026,2025,12,9,11475,2790,2309,230.9,Alberta,Calgary,Male,Master,87668,Married,Star,7995,0
+100027,2025,12,10,3340,2030,241,24.1,British Columbia,Victoria,Female,College,118400,Single,Star,8915,1
+100028,2025,12,0,0,0,0,0.0,Ontario,Ottawa,Female,Master,113513,Single,Nova,18437,0
+100029,2025,8,0,0,0,0,0.0,Alberta,Edmonton,Male,Master,46277,Single,Nova,5952,1
+100030,2025,1,7,5495,1512,1014,101.4,British Columbia,Victoria,Male,College,95831,Married,Nova,14091,0
+100031,2025,4,0,0,0,0,0.0,Alberta,Calgary,Female,Master,60533,Single,Aurora,10300,0
+100032,2025,6,3,2304,1464,1258,125.8,British Columbia,Vancouver,Male,Doctorate,72645,Married,Star,13758,1
+100033,2025,11,0,0,0,0,0.0,Quebec,Montreal,Female,Master,41106,Single,Nova,11561,0
+100034,2025,1,2,2070,1176,512,51.2,Ontario,Ottawa,Male,Doctorate,118380,Single,Star,9086,0
+100035,2025,1,0,0,0,0,0.0,British Columbia,Victoria,Male,College,93790,Single,Star,17937,0
+100036,2025,4,3,3201,1074,625,62.5,Ontario,Ottawa,Male,Master,64523,Married,Nova,7484,1
+100037,2025,8,2,2400,744,454,45.4,British Columbia,Victoria,Female,Doctorate,53802,Married,Nova,11088,0
+100038,2025,6,2,1510,420,405,40.5,British Columbia,Vancouver,Female,Bachelor,97712,Single,Star,8559,1
+100039,2025,5,7,6713,1862,855,85.5,Quebec,Montreal,Male,College,59453,Married,Aurora,5813,0
+100040,2025,6,1,1282,217,53,5.3,Alberta,Edmonton,Female,College,72791,Single,Nova,5670,1
+100041,2025,5,3,996,771,719,71.9,British Columbia,Victoria,Female,Bachelor,64121,Married,Nova,14735,0
+100042,2025,10,8,11528,1768,1008,100.8,British Columbia,Victoria,Male,Doctorate,43173,Married,Nova,15985,1
+100043,2025,10,6,3876,2442,1256,125.6,Alberta,Calgary,Female,Doctorate,80735,Single,Aurora,17857,0
+100044,2025,10,6,6330,2274,29,2.9,British Columbia,Vancouver,Female,Bachelor,48411,Single,Nova,9380,0
+100045,2025,5,4,3548,1632,766,76.6,Ontario,Toronto,Female,Master,81041,Single,Star,18396,1
+100046,2025,3,0,0,0,0,0.0,Alberta,Calgary,Female,Master,70048,Married,Aurora,14009,0
+100047,2025,5,2,2070,896,226,22.6,Alberta,Calgary,Male,College,45773,Single,Nova,15157,1
+100048,2025,5,4,3528,1976,1821,182.1,British Columbia,Vancouver,Female,Master,87807,Married,Nova,18770,0
+100049,2025,9,9,9144,1944,1939,193.9,Quebec,Montreal,Female,Bachelor,84219,Single,Nova,7306,1
+100050,2025,12,10,9480,3790,3123,312.3,British Columbia,Vancouver,Female,Master,105197,Married,Aurora,10028,1
+100051,2025,11,0,0,0,0,0.0,Quebec,Quebec City,Female,College,90378,Single,Aurora,19210,0
+100052,2025,10,5,7000,1115,584,58.4,Alberta,Edmonton,Male,College,90266,Married,Star,5515,0
+100053,2025,1,5,2120,2155,1433,143.3,Ontario,Ottawa,Male,Master,43198,Married,Nova,19162,1
+100054,2025,9,3,3633,717,241,24.1,Quebec,Montreal,Male,Master,67799,Single,Nova,10284,0
+100055,2025,7,1,1279,580,249,24.9,Ontario,Toronto,Female,Bachelor,113638,Single,Nova,9959,0
+100056,2025,9,6,5736,3486,304,30.4,Ontario,Toronto,Male,Master,104328,Single,Nova,14791,0
+100057,2025,5,8,7312,2880,1636,163.6,Quebec,Montreal,Female,College,98239,Married,Aurora,5681,1
+100058,2025,3,7,4998,3045,2781,278.1,Alberta,Calgary,Female,Master,48302,Single,Aurora,7380,0
+100059,2025,6,9,2835,3987,3478,347.8,Ontario,Toronto,Female,Master,89083,Single,Aurora,12666,0
+100060,2025,6,1,1196,329,113,11.3,Quebec,Quebec City,Female,Bachelor,48660,Single,Nova,16905,1
+100061,2025,11,2,908,1000,877,87.7,Ontario,Ottawa,Female,College,91326,Married,Aurora,13042,0
+100062,2025,2,8,9832,4640,76,7.6,Quebec,Montreal,Female,Bachelor,86707,Married,Aurora,18933,1
+100063,2025,8,7,10234,3178,390,39.0,Quebec,Quebec City,Female,College,101772,Single,Nova,17961,0
+100064,2025,10,10,3980,5130,3591,359.1,Alberta,Edmonton,Male,Master,80176,Single,Aurora,13764,0
+100065,2025,9,4,2624,1036,2,0.2,Alberta,Edmonton,Male,Doctorate,116631,Married,Star,17585,0
+100066,2025,5,10,3010,3440,1315,131.5,Quebec,Quebec City,Male,Bachelor,59260,Single,Star,18230,0
+100067,2025,11,6,7188,2262,576,57.6,Alberta,Edmonton,Female,Master,107398,Married,Nova,16380,1
+100068,2025,4,8,3816,1928,1481,148.1,Ontario,Ottawa,Female,Bachelor,115521,Single,Aurora,16290,1
+100069,2025,3,7,6482,2408,388,38.8,Ontario,Toronto,Male,Doctorate,89545,Single,Aurora,9582,0
+100070,2025,3,6,2010,1890,622,62.2,Alberta,Edmonton,Male,Bachelor,90950,Married,Nova,18028,1
+100071,2025,9,4,5712,1148,1113,111.3,Ontario,Ottawa,Female,College,57109,Married,Star,14957,0
+100072,2025,10,5,3860,2520,1425,142.5,Ontario,Ottawa,Male,Bachelor,92888,Single,Nova,15755,1
+100073,2025,6,10,9910,5510,1863,186.3,Quebec,Montreal,Female,Doctorate,58336,Single,Star,14494,0
+100074,2025,9,8,9296,1848,998,99.8,Ontario,Toronto,Male,College,87565,Married,Aurora,11586,1
+100075,2025,12,4,5248,1988,706,70.6,Alberta,Edmonton,Male,Master,118674,Single,Nova,12054,0
+100076,2025,6,0,0,0,0,0.0,Ontario,Ottawa,Female,Bachelor,97435,Married,Nova,19134,1
+100077,2025,10,2,1448,1158,477,47.7,British Columbia,Vancouver,Female,College,69607,Single,Nova,7960,0
+100078,2025,5,10,6910,3690,973,97.3,Quebec,Montreal,Male,College,88497,Married,Nova,5179,0
+100079,2025,6,6,6396,1794,478,47.8,Alberta,Calgary,Male,Master,105309,Single,Nova,18259,0
+100080,2025,12,6,4350,1422,696,69.6,Quebec,Quebec City,Male,College,61055,Single,Star,17143,0
+100081,2025,1,3,3834,1011,831,83.1,Ontario,Toronto,Female,Master,41219,Single,Nova,18702,0
+100082,2025,11,0,0,0,0,0.0,British Columbia,Vancouver,Male,Master,82112,Married,Star,13346,1
+100083,2025,4,8,7128,2752,475,47.5,Ontario,Toronto,Female,Bachelor,57971,Single,Star,10571,1
+100084,2025,3,2,1470,478,411,41.1,British Columbia,Victoria,Male,Master,89964,Married,Nova,16603,0
+100085,2025,8,10,9040,5290,1759,175.9,British Columbia,Vancouver,Female,Bachelor,89913,Married,Star,10041,0
+100086,2025,6,2,2380,904,255,25.5,Alberta,Edmonton,Male,Bachelor,42896,Married,Nova,14812,0
+100087,2025,2,3,4446,867,287,28.7,Quebec,Quebec City,Male,Doctorate,114053,Single,Nova,10948,0
+100088,2025,4,4,3512,2060,87,8.7,Ontario,Toronto,Female,Doctorate,106100,Married,Aurora,17137,0
+100089,2025,4,0,0,0,0,0.0,Quebec,Quebec City,Male,College,40461,Single,Nova,18749,1
+100090,2025,8,1,1064,364,340,34.0,Quebec,Montreal,Female,Bachelor,102511,Married,Star,6882,0
+100091,2025,1,3,4332,1185,407,40.7,Alberta,Edmonton,Female,College,106387,Married,Nova,14115,1
+100092,2025,1,10,9960,4670,425,42.5,British Columbia,Victoria,Male,College,40809,Single,Star,10144,0
+100093,2025,8,0,0,0,0,0.0,Alberta,Calgary,Female,College,65128,Married,Nova,7097,1
+100094,2025,10,10,9360,5680,3649,364.9,Alberta,Calgary,Female,Master,85150,Married,Aurora,6882,1
+100095,2025,3,0,0,0,0,0.0,Ontario,Toronto,Male,Master,73630,Married,Star,9771,0
+100096,2025,5,2,1384,412,178,17.8,Quebec,Quebec City,Male,College,45441,Married,Aurora,12012,1
+100097,2025,3,8,3000,2576,1098,109.8,British Columbia,Vancouver,Male,Doctorate,64446,Single,Aurora,14483,1
+100098,2025,2,7,7063,3948,567,56.7,Alberta,Calgary,Male,College,51071,Single,Aurora,8084,1
+100099,2025,11,5,6835,1550,297,29.7,Ontario,Ottawa,Female,Master,61231,Married,Nova,7082,1
+100100,2025,7,5,3215,2510,370,37.0,British Columbia,Vancouver,Female,Bachelor,97074,Married,Star,11912,0
+100101,2025,10,10,7840,3140,2542,254.2,British Columbia,Vancouver,Female,College,91271,Married,Aurora,10143,1
+100102,2025,6,0,0,0,0,0.0,Quebec,Montreal,Female,Bachelor,80391,Married,Aurora,12120,0
+100103,2025,6,1,1449,481,143,14.3,Ontario,Ottawa,Female,College,91727,Married,Nova,10668,0
+100104,2025,11,1,576,439,124,12.4,Ontario,Ottawa,Female,Bachelor,40113,Married,Star,18076,0
+100105,2025,2,5,6475,2200,1147,114.7,Ontario,Ottawa,Male,Bachelor,57048,Married,Nova,5007,0
+100106,2025,9,8,8320,3224,1424,142.4,Alberta,Calgary,Female,Master,96235,Married,Aurora,15371,1
+100107,2025,5,8,11088,3120,1574,157.4,Alberta,Calgary,Female,Master,68151,Married,Nova,10927,0
+100108,2025,2,8,11016,3408,1569,156.9,Alberta,Edmonton,Female,College,110342,Married,Aurora,8024,1
+100109,2025,4,4,3756,1100,391,39.1,British Columbia,Victoria,Female,Bachelor,51913,Married,Aurora,10305,0
+100110,2025,4,4,1784,1768,1754,175.4,Quebec,Montreal,Female,Doctorate,91200,Single,Star,14890,0
+100111,2025,12,9,5598,3429,2643,264.3,Quebec,Montreal,Male,Master,85381,Married,Star,5029,1
+100112,2025,5,7,5285,2751,824,82.4,Ontario,Ottawa,Female,Bachelor,72317,Single,Star,11000,0
+100113,2025,8,0,0,0,0,0.0,British Columbia,Vancouver,Female,Doctorate,62608,Single,Star,14121,0
+100114,2025,5,9,8505,2574,668,66.8,Quebec,Montreal,Female,Doctorate,107303,Single,Star,12181,1
+100115,2025,12,2,912,1194,194,19.4,Ontario,Ottawa,Female,Bachelor,46484,Single,Aurora,13124,1
+100116,2025,8,5,6805,1420,494,49.4,Ontario,Toronto,Male,College,90344,Single,Star,11104,1
+100117,2025,12,10,12500,5990,4222,422.2,Alberta,Edmonton,Female,Doctorate,103211,Single,Nova,16483,1
+100118,2025,11,7,9240,2310,1305,130.5,Alberta,Calgary,Male,Master,81316,Single,Aurora,5781,0
+100119,2025,11,8,2512,2296,755,75.5,Ontario,Ottawa,Female,Master,72087,Single,Nova,10077,1
+100120,2025,2,7,4270,3717,608,60.8,Alberta,Calgary,Female,Bachelor,70026,Single,Star,12362,0
+100121,2025,8,8,5768,3624,881,88.1,Alberta,Calgary,Female,Doctorate,100811,Single,Star,9205,1
+100122,2025,8,3,1377,1641,1466,146.6,Alberta,Edmonton,Female,Master,51606,Single,Aurora,16161,0
+100123,2025,12,1,780,400,284,28.4,Alberta,Calgary,Male,Doctorate,83477,Single,Nova,19647,0
+100124,2025,2,9,7623,4527,1747,174.7,Ontario,Toronto,Male,Master,116250,Single,Aurora,17113,0
+100125,2025,11,2,1192,692,158,15.8,British Columbia,Vancouver,Male,Doctorate,108923,Single,Star,16206,1
+100126,2025,1,0,0,0,0,0.0,Quebec,Montreal,Male,Master,110966,Single,Star,17269,0
+100127,2025,7,6,5856,3594,1156,115.6,Alberta,Edmonton,Female,Doctorate,105809,Married,Nova,10192,1
+100128,2025,2,1,986,566,121,12.1,British Columbia,Vancouver,Female,College,42454,Single,Nova,17128,0
+100129,2025,3,10,14730,3900,3207,320.7,Ontario,Toronto,Male,Bachelor,56284,Single,Aurora,9555,1
+100130,2025,5,0,0,0,0,0.0,Alberta,Calgary,Male,Bachelor,89231,Single,Nova,19037,1
+100131,2025,5,8,3440,4784,49,4.9,Alberta,Calgary,Female,Bachelor,51361,Married,Star,13398,1
+100132,2025,12,6,8694,2340,2200,220.0,Ontario,Toronto,Male,College,81704,Married,Aurora,18926,0
+100133,2025,3,6,6774,2460,2267,226.7,British Columbia,Vancouver,Male,Master,114635,Married,Star,15389,0
+100134,2025,9,8,10824,4192,2567,256.7,Ontario,Ottawa,Female,Master,76977,Single,Aurora,6831,0
+100135,2025,6,3,3780,1584,46,4.6,British Columbia,Vancouver,Male,College,47861,Single,Nova,10230,1
+100136,2025,12,4,3692,2064,1461,146.1,Alberta,Calgary,Female,Bachelor,86143,Single,Aurora,17525,1
+100137,2025,7,3,2217,762,601,60.1,Alberta,Edmonton,Male,Master,112361,Single,Star,6436,0
+100138,2025,1,0,0,0,0,0.0,Ontario,Toronto,Female,College,93508,Married,Aurora,7797,0
+100139,2025,7,4,2720,2348,1935,193.5,Alberta,Edmonton,Male,Doctorate,82153,Single,Aurora,6954,1
+100140,2025,11,0,0,0,0,0.0,Quebec,Quebec City,Female,Bachelor,66404,Single,Nova,10864,1
+100141,2025,2,0,0,0,0,0.0,Quebec,Montreal,Female,Master,98918,Single,Aurora,11280,0
+100142,2025,6,5,6895,2360,1436,143.6,Ontario,Ottawa,Male,Bachelor,63760,Single,Aurora,19389,1
+100143,2025,8,9,7299,3024,1528,152.8,British Columbia,Victoria,Female,Bachelor,102365,Married,Aurora,9683,1
+100144,2025,11,0,0,0,0,0.0,Ontario,Ottawa,Female,Master,56515,Single,Star,9727,0
+100145,2025,6,9,2736,5301,872,87.2,British Columbia,Vancouver,Male,Master,83900,Single,Aurora,12161,0
+100146,2025,6,5,6565,1270,394,39.4,Quebec,Quebec City,Male,Bachelor,79899,Single,Star,14000,0
+100147,2025,10,8,10824,3520,3040,304.0,British Columbia,Vancouver,Male,College,76240,Married,Nova,18598,0
+100148,2025,2,2,1790,1000,472,47.2,Ontario,Toronto,Male,College,45208,Single,Star,17219,0
+100149,2025,8,6,6432,2208,1728,172.8,British Columbia,Vancouver,Female,Doctorate,83096,Single,Nova,14849,1
