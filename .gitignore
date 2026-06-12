@@ -1,0 +1,51 @@
+# ------------------------
+# Python cache & artifacts
+# ------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+
+# ------------------------
+# Virtual environments
+# ------------------------
+.env
+.venv
+env/
+venv/
+ENV/
+
+# ------------------------
+# Jupyter & Streamlit
+# ------------------------
+.ipynb_checkpoints/
+.streamlit/
+
+# ------------------------
+# OS-specific files
+# ------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------
+# Logs
+# ------------------------
+*.log
+
+# ------------------------
+# Data files
+# ------------------------
+# Ignore large/private datasets, but keep sample CSV
+data/*.csv
+!data/sample_loyalty_data.csv
+
+# ------------------------
+# Images (optional)
+# ------------------------
+images/*.png
+images/*.jpg
+images/*.jpeg
+images/*.gif
