@@ -1,0 +1,44 @@
+DAY 6 REPORT – ENSEMBLE METHODS
+
+OBJECTIVES
+- Explore ensemble techniques (Voting and Stacking) to combine Random Forest and XGBoost.
+- Evaluate whether ensembles improve performance compared to individual models.
+- Document findings and interpret business implications.
+
+WORKFLOW
+1. Recreated tuned Random Forest and XGBoost models from Day 4.
+2. Built a Voting Classifier (soft voting) combining Random Forest + XGBoost.
+3. Built a Stacking Classifier with Random Forest and XGBoost as base learners, Logistic Regression as meta‑learner.
+4. Evaluated ensemble performance using Accuracy, Precision, Recall, F1 Score, and ROC AUC.
+
+FUNCTIONS & CONCEPTS USED
+- VotingClassifier: combines predictions via majority or probability averaging.
+- StackingClassifier: meta‑learner approach combining base model outputs.
+- LogisticRegression: used as meta‑learner in stacking.
+- sklearn.metrics: evaluation metrics.
+
+RESULTS SUMMARY
+Voting Classifier
+- Accuracy: 0.895
+- Precision: 0.000
+- Recall: 0.000
+- F1 Score: 0.000
+- ROC AUC: 0.500
+
+Stacking Classifier
+- Accuracy: 0.901
+- Precision: 0.579
+- Recall: 0.231
+- F1 Score: 0.331
+- ROC AUC: 0.606
+
+INTERPRETATION
+- Voting Classifier failed to predict churners (precision/recall = 0), essentially defaulting to majority class.
+- Stacking Classifier showed modest improvement: recall ~23%, precision ~58%, F1 ~0.33, ROC AUC ~0.61.
+- Neither ensemble outperformed the tuned Random Forest (Day 4–5 results: F1 ~0.98, ROC AUC ~0.98).
+- Random Forest remains the most reliable production model, while ensembles highlight the difficulty of improving recall without sacrificing precision.
+
+DELIVERABLES
+- Voting Classifier metrics.
+- Stacking Classifier metrics.
+- This Day 6 Report summarizing objectives, workflow, functions, results, and insights.

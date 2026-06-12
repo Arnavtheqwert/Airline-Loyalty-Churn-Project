@@ -1,0 +1,20 @@
+Country Profile:
+  Country  Strict_Churn          CLV  Customer_Count  Churn_Rate
+0  Canada             0  7963.278841          350942    0.893128
+1  Canada             1  8209.697490           41994    0.106872
+
+Province Profile:
+           Province  Strict_Churn          CLV  Customer_Count  Churn_Rate
+0           Alberta             0  7800.311055           20402    0.891189
+1           Alberta             1  7896.899285            2491    0.108811
+2  British Columbia             0  7962.894615           92624    0.897450
+3  British Columbia             1  8213.774722           10584    0.102550
+4          Manitoba             0  8004.198848           13611    0.866336
+
+City Profile:
+            City  Strict_Churn          CLV  Customer_Count  Churn_Rate
+0          Banff             0  7389.199248            3698    0.871348
+1          Banff             1  6881.595092             546    0.128652
+2        Calgary             0  7679.263501            4033    0.895029
+3        Calgary             1  8300.665708             473    0.104971
+4  Charlottetown             0  7541.824323            1337    0.851050

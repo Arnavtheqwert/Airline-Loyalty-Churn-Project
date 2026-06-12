@@ -1,0 +1,47 @@
+DAY 2 REPORT – FEATURE ENGINEERING & CHURN FLAG CREATION
+
+OBJECTIVES
+- Enhance the cleaned dataset from Day 1 with new behavioral and demographic features.
+- Define churn in multiple ways (strict vs. behavioral) to capture different disengagement patterns.
+- Prepare a robust dataset for modeling in Day 3.
+
+WORKFLOW
+1. Data Preparation
+   - Loaded cleaned_loyalty_data.csv (Day 1 output).
+   - Preserved anomaly flags from Day 1 (Redeem_Without_Flights_Flag, Invalid_Distance_Flag, Missing_Demo_Flag).
+
+2. Feature Engineering
+   - Flight_Frequency: Total Flights ÷ (2026 – Enrollment Year).
+   - Redemption_Ratio: Points Redeemed ÷ Points Accumulated (with zero-handling).
+   - Season: Enrollment Month mapped to Winter, Spring, Summer, Fall.
+   - Tier_Code: Loyalty Card mapped to numeric codes (Blue=1, Silver=2, Gold=3, Platinum=4).
+   - CLV_Segment: Binary segmentation based on median CLV.
+
+3. Churn Flag Creation
+   - Strict_Churn: Cancellation Year present → churned.
+   - Behavioral_Churn: No flights, no accumulation, no redemption → inactive.
+
+4. Dataset Output
+   - Saved engineered_loyalty_data.csv with all Day 1 flags + new features + churn flags.
+
+FUNCTIONS & CONCEPTS USED
+- pandas: data loading, merging, feature creation.
+- pd.cut: binning enrollment months into seasons.
+- map: converting loyalty card tiers into numeric codes.
+- median: CLV segmentation.
+- Boolean logic: churn flag definitions.
+
+RESULTS SUMMARY
+- Engineered features created: Flight_Frequency, Redemption_Ratio, Season, Tier_Code, CLV_Segment.
+- Churn flags defined: Strict_Churn, Behavioral_Churn.
+- Final dataset: engineered_loyalty_data.csv with ~16,700 records, anomalies preserved, features added.
+
+INTERPRETATION
+- Flight_Frequency and Redemption_Ratio capture behavioral intensity.
+- Season and Tier_Code add demographic and program-level context.
+- CLV_Segment provides a value-based split for retention analysis.
+- Strict vs. Behavioral churn definitions ensure both formal cancellations and silent disengagement are captured.
+
+DELIVERABLES
+- Final engineered dataset (engineered_loyalty_data.csv).
+- This Day 2 Report summarizing objectives, workflow, functions, results, and insights.

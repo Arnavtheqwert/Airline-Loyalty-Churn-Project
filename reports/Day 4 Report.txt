@@ -1,0 +1,80 @@
+DAY 4 REPORT – HYPERPARAMETER TUNING & FEATURE IMPORTANCE
+
+OBJECTIVES
+- Optimize Random Forest and XGBoost models using hyperparameter tuning.
+- Compare tuned models against Day 3 baseline results.
+- Identify the most important features driving churn predictions.
+- Strengthen the credibility and interpretability of the modeling pipeline.
+
+WORKFLOW
+1. Hyperparameter Tuning
+   - Random Forest tuned with GridSearchCV across n_estimators, max_depth, min_samples_split, min_samples_leaf.
+   - XGBoost tuned with RandomizedSearchCV across n_estimators, learning_rate, max_depth, subsample, colsample_bytree.
+   - Selected best models based on F1 score.
+
+2. Model Evaluation
+   - Computed Accuracy, Precision, Recall, F1 Score, ROC AUC.
+   - Compared tuned results with Day 3 baseline.
+
+3. Feature Importance
+   - Extracted top 10 features from Random Forest and XGBoost.
+   - Interpreted business meaning of key drivers.
+
+FUNCTIONS & CONCEPTS USED
+- GridSearchCV, RandomizedSearchCV: hyperparameter tuning
+- RandomForestClassifier, XGBClassifier: tuned models
+- feature_importances_: feature ranking
+- sklearn.metrics: evaluation metrics
+
+RESULTS SUMMARY
+Random Forest (Best Params: {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 300})
+- Accuracy: 0.996
+- Precision: 0.997
+- Recall: 0.968
+- F1 Score: 0.982
+- ROC AUC: 0.984
+- Confusion Matrix: [[105421, 32], [403, 12025]]
+
+Top 10 Features (Random Forest):
+1. Loyalty Number
+2. CLV
+3. Salary
+4. Enrollment Year
+5. Enrollment Month
+6. Month
+7. Marital Status
+8. Distance
+9. Points Accumulated
+10. Total Flights
+
+XGBoost (Best Params: {'subsample': 0.8, 'n_estimators': 300, 'max_depth': 5, 'learning_rate': 0.1, 'colsample_bytree': 0.8})
+- Accuracy: 0.923
+- Precision: 0.955
+- Recall: 0.281
+- F1 Score: 0.435
+- ROC AUC: 0.640
+- Confusion Matrix: [[105287, 166], [8930, 3498]]
+
+Top 10 Features (XGBoost):
+1. Flight_Frequency
+2. Total Flights
+3. Enrollment Year
+4. Points Accumulated
+5. Dollar Cost Points Redeemed
+6. Year
+7. Enrollment Month
+8. Distance
+9. CLV
+10. Season
+
+INTERPRETATION
+- Random Forest improved slightly over Day 3 baseline, achieving excellent balance between Precision and Recall.
+- Loyalty Number, CLV, and Salary are the strongest churn predictors in Random Forest, highlighting customer identity, value, and demographics.
+- XGBoost tuning did not improve recall; it remains weak at ~28%, indicating difficulty in capturing churners.
+- Flight_Frequency and Total Flights dominate XGBoost importance, showing behavioral activity as its main driver.
+- Best Model: Random Forest remains the most reliable and interpretable choice for churn prediction.
+
+DELIVERABLES
+- Tuned Random Forest and XGBoost models.
+- Feature importance rankings.
+- This Day 4 Report summarizing objectives, workflow, functions, results, and insights.

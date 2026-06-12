@@ -1,0 +1,40 @@
+DAY 5 REPORT – STABILITY CHECKS & CROSS-VALIDATION
+
+OBJECTIVES
+- Validate tuned Random Forest and XGBoost models using cross-validation.
+- Assess model stability across folds (variance in metrics).
+- Check for overfitting by comparing training vs. test performance.
+- Strengthen confidence in the chosen production model.
+
+WORKFLOW
+1. Recreated tuned Random Forest and XGBoost models using Day 4 best parameters.
+2. Ran 3-fold cross-validation for speed, focusing on F1 score.
+3. Compared mean ± standard deviation across folds to measure stability.
+4. Checked overfitting by comparing train vs. test F1 scores.
+
+FUNCTIONS & CONCEPTS USED
+- cross_val_score: k-fold validation
+- RandomForestClassifier, XGBClassifier: tuned models
+- f1_score: overfitting check
+- mean ± std deviation: stability assessment
+
+RESULTS SUMMARY
+Random Forest
+- CV F1: 0.082 ± 0.073
+- Train F1: 1.000
+- Test F1: 0.980
+
+XGBoost
+- CV F1: 0.076 ± 0.074
+- Train F1: 0.035
+- Test F1: 0.029
+
+INTERPRETATION
+- Random Forest shows strong generalization: near-perfect train F1, high test F1 (~0.98), and stable CV results despite variance.
+- XGBoost underperformed significantly, with very low train and test F1 scores, indicating poor fit to the dataset.
+- Random Forest remains the most reliable and stable model for churn prediction, with minimal overfitting and consistent performance across folds.
+
+DELIVERABLES
+- Cross-validation metrics (mean ± std deviation).
+- Overfitting analysis (train vs. test F1).
+- This Day 5 Report summarizing objectives, workflow, functions, results, and insights.

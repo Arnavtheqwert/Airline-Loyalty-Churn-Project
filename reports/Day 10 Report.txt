@@ -1,0 +1,37 @@
+DAY 10 REPORT – RETENTION STRATEGY DESIGN
+
+OBJECTIVES
+- Translate churn and segment insights into actionable retention strategies.
+- Assign strategies to customers based on CLV segment and churn risk.
+- Document a framework for personalized engagement and campaign testing.
+
+WORKFLOW
+1. Defined CLV segments (Low, Medium, High) using quantile segmentation.
+2. Mapped churners in each segment to tailored retention strategies:
+   • High CLV churners → concierge outreach + tier upgrade.
+   • Medium CLV churners → bundle offers + loyalty progression.
+   • Low CLV churners → discounted fares + gamification.
+   • Non‑churners → maintain engagement.
+3. Applied strategy mapping function across dataset.
+4. Previewed assignments to confirm logic.
+
+FUNCTIONS & CONCEPTS USED
+- pd.qcut: CLV segmentation into quantiles.
+- apply with custom function: strategy assignment per customer.
+- Retention strategy design: linking business actions to churn insights.
+
+RESULTS SUMMARY (sample preview)
+- Loyalty Number 100590 | CLV Segment: High | Strict_Churn: 0 → Strategy: Maintain engagement
+- High CLV non‑churners are assigned “Maintain engagement” to preserve loyalty.
+- Churners in each segment receive differentiated strategies based on value.
+
+INTERPRETATION
+- Framework ensures high‑value churners receive premium interventions (tier upgrades, concierge outreach).
+- Medium CLV churners are targeted with bundle offers and progression incentives to increase loyalty.
+- Low CLV churners are engaged with cost‑effective tactics (discounts, gamification).
+- Non‑churners are maintained with standard engagement to avoid unnecessary cost.
+- This segmentation‑driven approach balances retention investment with customer value.
+
+DELIVERABLES
+- Strategy assignment table (customer → CLV segment → churn flag → strategy).
+- This Day 10 Report summarizing objectives, workflow, functions, results, and insights.

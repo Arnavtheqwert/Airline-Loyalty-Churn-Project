@@ -1,0 +1,51 @@
+DAY 8 REPORT – SEGMENT PROFILING
+
+OBJECTIVES
+- Group customers into meaningful segments using CLV and churn risk.
+- Profile each segment with average CLV, customer count, and churn rate.
+- Add demographic profiling to understand differences across education and gender.
+- Identify high‑value at‑risk customers for targeted retention strategies.
+
+WORKFLOW
+1. Defined CLV buckets (Low, Medium, High) using quantile segmentation.
+2. Grouped customers by CLV segment and churn flag (Strict_Churn).
+3. Calculated average CLV, customer count, and churn rate for each segment.
+4. Extended profiling with demographic attributes (Gender, Education).
+5. Compared segment patterns to highlight business priorities.
+
+FUNCTIONS & CONCEPTS USED
+- pd.qcut: quantile‑based segmentation of CLV.
+- groupby + agg: aggregation of segment statistics.
+- lambda with apply: churn rate calculation.
+- Demographic profiling: multi‑attribute grouping.
+
+RESULTS SUMMARY
+CLV Segment Profiles
+- Low CLV
+  • Non‑Churn: Avg CLV ≈ 3,274 | Count = 117,497 | Churn Rate = 89.7%
+  • Churn: Avg CLV ≈ 3,312 | Count = 13,550 | Churn Rate = 10.3%
+- Medium CLV
+  • Non‑Churn: Avg CLV ≈ 6,076 | Count = 116,402 | Churn Rate = 88.9%
+  • Churn: Avg CLV ≈ 6,053 | Count = 14,595 | Churn Rate = 11.1%
+- High CLV
+  • Non‑Churn: Avg CLV ≈ 14,548 | Count = 117,043 | Churn Rate = 89.4%
+  • Churn: Avg CLV ≈ 15,274 | Count = 13,849 | Churn Rate = 10.6%
+
+Demographic Profile (Low CLV, Female)
+- Bachelor: Avg CLV ≈ 3,260 | Churn ≈ 11.0%
+- College: Avg CLV ≈ 3,286 | Churn ≈ 10.4%
+- Doctor: Avg CLV ≈ 3,440 | Churn ≈ 14.4%
+- High School or Below: Avg CLV ≈ 3,270 | Churn ≈ 10.1%
+- Master: Avg CLV ≈ 3,308 | Churn ≈ 6.6%
+
+INTERPRETATION
+- Across all CLV segments, churn rates hover around 10–11%, showing consistent risk distribution.
+- High CLV churners (Avg CLV ≈ 15,274) represent the most critical segment: fewer in number but high revenue loss potential.
+- Medium CLV churners are slightly larger in count, making them important for volume‑based retention.
+- Demographic profiling reveals variation: e.g., Low CLV females with Master’s education have lower churn (~6.6%), while Doctorates show higher churn (~14.4%).
+- These insights suggest targeted strategies: prioritize retention for high‑CLV churners and investigate demographic drivers of churn.
+
+DELIVERABLES
+- Segment profile table (CLV × Churn).
+- Demographic profile table (CLV × Gender × Education).
+- This Day 8 Report summarizing objectives, workflow, functions, results, and insights.

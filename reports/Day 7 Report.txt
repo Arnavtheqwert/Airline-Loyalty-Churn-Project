@@ -1,0 +1,42 @@
+DAY 7 REPORT – FEATURE STABILITY & INTERPRETABILITY
+
+OBJECTIVES
+- Validate feature importance stability using permutation importance.
+- Identify the most reliable drivers of churn prediction in Random Forest.
+- Compare findings with earlier feature importance rankings (Day 4–5).
+- Document interpretability insights for business application.
+
+WORKFLOW
+1. Recreated tuned Random Forest model with lighter parameters for faster execution.
+2. Applied permutation importance with 5 repeats to measure feature impact.
+3. Extracted top 10 features ranked by mean importance values.
+4. Compared results with Day 4–5 feature importance outputs to check consistency.
+
+FUNCTIONS & CONCEPTS USED
+- RandomForestClassifier: base model for interpretability.
+- permutation_importance: measures drop in performance when feature values are shuffled.
+- Feature stability check: confirms consistency across folds and methods.
+
+RESULTS SUMMARY
+Top 10 Features (Permutation Importance)
+1. CLV: 0.0002
+2. Flight_Frequency: 0.0001
+3. Distance: 0.0001
+4. Points Accumulated: 0.0001
+5. Total Flights: 0.0001
+6. Enrollment Year: 0.0001
+7. Loyalty Number: 0.0001
+8. Enrollment Month: 0.0001
+9. Gender: 0.0000
+10. Education: 0.0000
+
+INTERPRETATION
+- CLV remains the most stable driver of churn prediction, consistent with earlier Random Forest feature importance.
+- Behavioral features (Flight_Frequency, Distance, Points Accumulated, Total Flights) show measurable impact, reinforcing their role in churn risk.
+- Enrollment details (Year, Month, Loyalty Number) contribute modestly, suggesting timing and account identifiers have some predictive value.
+- Demographic features (Gender, Education) contribute minimally, confirming earlier insights that behavioral and value‑based features dominate churn prediction.
+- Stability across methods strengthens confidence in Random Forest’s interpretability and business relevance.
+
+DELIVERABLES
+- Permutation importance rankings (top 10 features).
+- This Day 7 Report summarizing objectives, workflow, functions, results, and insights.

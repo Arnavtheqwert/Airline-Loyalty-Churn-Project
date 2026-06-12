@@ -1,0 +1,52 @@
+DAY 3 REPORT – MODELING & EVALUATION
+
+OBJECTIVES
+- Build predictive models to classify customer churn using the engineered dataset from Day 2.
+- Compare performance across Logistic Regression, Random Forest, and XGBoost.
+- Identify the most effective model for churn prediction.
+
+WORKFLOW
+1. Data Preparation
+   - Loaded engineered_loyalty_data.csv (Day 2 output).
+   - Dropped target columns (Strict_Churn, Behavioral_Churn) and cancellation fields with NaNs.
+   - Encoded categorical variables (Gender, Education, Marital Status, Season).
+   - Imputed missing values (median for numeric, most frequent for categorical).
+   - Scaled numeric features (Salary, Distance, Flight_Frequency, Redemption_Ratio, etc.).
+
+2. Model Training
+   - Split dataset into training (70%) and testing (30%).
+   - Trained three models:
+     • Logistic Regression
+     • Random Forest
+     • XGBoost
+
+3. Evaluation
+   - Computed Accuracy, Precision, Recall, F1 Score, ROC AUC.
+   - Generated Confusion Matrices for each model.
+
+FUNCTIONS & CONCEPTS USED
+- pandas: data loading, cleaning, feature selection
+- LabelEncoder: categorical encoding
+- SimpleImputer: handling missing values
+- StandardScaler: feature scaling
+- train_test_split: dataset partitioning
+- LogisticRegression, RandomForestClassifier, XGBClassifier: model training
+- sklearn.metrics: evaluation metrics (accuracy, precision, recall, F1, ROC AUC, confusion matrix)
+
+RESULTS SUMMARY
+Model                Accuracy   Precision   Recall   F1 Score   ROC AUC
+-----------------------------------------------------------------------
+Logistic Regression   0.895      0.000       0.000    0.000      0.500
+Random Forest         0.996      0.997       0.964    0.980      0.982
+XGBoost               0.948      0.948       0.536    0.685      0.766
+
+INTERPRETATION
+- Logistic Regression collapsed to predicting only the majority class, failing to detect churn.
+- Random Forest achieved near-perfect performance, balancing Precision and Recall with ROC AUC ≈ 0.982.
+- XGBoost performed reasonably but Recall was weaker (~53%), indicating missed churners.
+- Best Model: Random Forest is the most reliable choice for churn prediction in this dataset.
+
+DELIVERABLES
+- Final modeling script (modeling.py).
+- Evaluation metrics and confusion matrices.
+- This Day 3 Report summarizing objectives, workflow, functions, results, and insights.
