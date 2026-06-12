@@ -1,0 +1,48 @@
+DAY 12 REPORT – STREAMLIT DASHBOARD
+
+OBJECTIVES
+- Integrate churn, segment, geographic, and recommendation insights into a single interactive dashboard.
+- Provide managers with a cockpit view of loyalty program performance.
+- Enable filtering by CLV segment and geography for targeted analysis.
+- Prepare dashboard prototype for portfolio/demo use.
+
+WORKFLOW
+1. Installed and configured Streamlit environment.
+2. Loaded engineered dataset and defined CLV segments.
+3. Built sidebar filters for CLV segment and province selection.
+4. Organized dashboard into four tabs:
+   • Churn Risk Distribution
+   • Segment Profiles
+   • Geographic Opportunity Map
+   • Retention Recommendations
+5. Implemented visualizations:
+   • Bar chart for churn risk.
+   • Tables for segment and geographic profiles.
+   • Rule‑based recommendation table from Day 11.
+6. Tested interactivity by applying filters and previewing outputs.
+
+FUNCTIONS & CONCEPTS USED
+- Streamlit (`st.sidebar`, `st.tabs`, `st.bar_chart`, `st.dataframe`): interactive dashboard components.
+- pd.qcut: CLV segmentation.
+- groupby + agg: aggregation for segment and geographic profiling.
+- apply with custom function: recommendation assignment.
+- Dashboard design: organizing insights into panels for clarity.
+
+RESULTS SUMMARY
+- Churn Risk tab: clear visualization of churn vs non‑churn counts.
+- Segment Profiles tab: CLV buckets with average CLV, customer count, churn rate.
+- Geographic Map tab: province‑level churn and CLV distribution, filterable by region.
+- Recommendations tab: customer‑level retention strategies based on CLV segment and churn flag.
+- Sidebar filters successfully narrowed analysis by CLV segment and province.
+
+INTERPRETATION
+- The dashboard consolidates all project insights into a single interactive interface.
+- Managers can quickly identify churn risk distribution, segment behavior, and geographic hotspots.
+- Retention recommendations are directly visible, enabling actionable decision‑making.
+- The prototype demonstrates how technical analysis can be translated into business‑friendly tools.
+- This dashboard is portfolio‑ready and can be further enhanced with styling, export options, and geographic maps.
+
+DELIVERABLES
+- Streamlit dashboard script (dashboard.py).
+- Interactive 4‑panel dashboard with filters.
+- This Day 12 Report summarizing objectives, workflow, functions, results, and insights.

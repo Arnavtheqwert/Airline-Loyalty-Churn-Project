@@ -1,0 +1,54 @@
+DAY 13 REPORT – DASHBOARD ENHANCEMENT & STYLING
+
+OBJECTIVES
+- Transform the basic Streamlit dashboard into a polished, portfolio‑ready application.
+- Improve visual appeal, usability, and clarity of insights.
+- Add advanced charts, styling, and export options for professional presentation.
+- Ensure smooth navigation and interactive filtering.
+
+WORKFLOW
+1. Configured Streamlit page setup with custom title, icon, and wide layout.
+2. Enhanced sidebar filters with clear labels for CLV segment and province.
+3. Organized dashboard into four tabs with icons:
+   • 📊 Churn Risk
+   • 📈 Segment Profiles
+   • 🌍 Geographic Map
+   • 🎯 Recommendations
+4. Applied styling improvements:
+   • Color themes (blue for non‑churn, red for churn).
+   • Section headers and icons for clarity.
+   • Conditional formatting in tables to highlight churners.
+5. Upgraded visualizations:
+   • Seaborn bar chart for churn distribution.
+   • Grouped bar chart for segment profiles.
+   • Province‑level churn/CLV tables with optional heatmap.
+6. Added export functionality:
+   • Download buttons for segment profiles, geographic map, and recommendations.
+7. Tested interactivity with filters and confirmed smooth navigation across panels.
+
+FUNCTIONS & CONCEPTS USED
+- st.set_page_config: custom dashboard title and layout.
+- st.sidebar: improved filter design.
+- st.tabs: organized panels with icons.
+- seaborn + matplotlib: advanced charting for churn and segment visuals.
+- st.download_button: export tables to CSV.
+- apply with custom function: retention recommendation assignment.
+
+RESULTS SUMMARY
+- Dashboard now has a professional look with consistent styling and improved readability.
+- Churn Risk tab: clear, color‑coded bar chart showing churn vs non‑churn counts.
+- Segment Profiles tab: grouped bar chart and table with export option.
+- Geographic Map tab: province‑level churn and CLV distribution, filterable and exportable.
+- Recommendations tab: customer‑level retention strategies with highlighting and CSV export.
+- Sidebar filters successfully narrow analysis by CLV segment and province.
+
+INTERPRETATION
+- Enhancements make the dashboard portfolio‑ready and business‑friendly.
+- Visual improvements help managers quickly grasp churn patterns and segment differences.
+- Export options allow insights to be shared outside the dashboard environment.
+- The dashboard now demonstrates both technical capability and business usability, strengthening its impact for internship preparation.
+
+DELIVERABLES
+- Enhanced Streamlit dashboard script with styling, advanced charts, and export options.
+- Interactive 4‑panel dashboard with filters and downloads.
+- This Day 13 Report summarizing objectives, workflow, functions, results, and insights.

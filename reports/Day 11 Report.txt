@@ -1,0 +1,38 @@
+DAY 11 REPORT – RECOMMENDATION ENGINE PROTOTYPE
+
+OBJECTIVES
+- Build a prototype system that automatically suggests retention actions for each customer.
+- Use CLV segment, churn risk, and geography to generate tailored recommendations.
+- Prepare the framework for integration into the Day 12 dashboard.
+
+WORKFLOW
+1. Defined CLV segments (Low, Medium, High) using quantile segmentation.
+2. Applied rules combining CLV segment, churn flag, and geography:
+   • High CLV churners → concierge outreach + tier upgrade.
+   • Medium CLV churners → bundle offers + loyalty progression.
+   • Low CLV churners → discounts + gamification.
+   • Non‑churners → maintain engagement.
+   • Geographic modifiers (British Columbia, Calgary) → localized perks.
+3. Implemented rule‑based function to assign recommendations.
+4. Previewed recommendation assignments for sample customers.
+
+FUNCTIONS & CONCEPTS USED
+- pd.qcut: CLV segmentation.
+- apply with custom function: rule‑based recommendation assignment.
+- Rule‑based engine design: mapping business logic to customer attributes.
+
+RESULTS SUMMARY (sample preview)
+- Loyalty Number 100590 | CLV Segment: High | Strict_Churn: 0 | City: Vancouver → Recommendation: Non‑churner → Maintain engagement
+- High CLV non‑churners are correctly assigned “Maintain engagement.”
+- Churners in each segment would receive differentiated strategies (concierge outreach, bundle offers, discounts).
+
+INTERPRETATION
+- The prototype demonstrates how customer attributes can be mapped to actionable retention strategies.
+- High CLV churners in priority regions (e.g., British Columbia, Calgary) will receive premium localized interventions.
+- Medium and Low CLV churners are targeted with scalable, cost‑effective tactics.
+- Non‑churners are maintained with standard engagement to preserve loyalty without overspending.
+- This rule‑based engine provides a foundation for automation and will be integrated into the dashboard in Day 12.
+
+DELIVERABLES
+- Recommendation assignment table (customer → CLV segment → churn flag → geography → recommendation).
+- This Day 11 Report summarizing objectives, workflow, functions, results, and insights.
