@@ -1,0 +1,111 @@
+Day 1 Report – Data Preparation & Cleaning
+
+1. Objective
+The goal of Day 1 was to prepare and clean the Customer Flight Activity and Customer Loyalty History datasets to ensure consistency, remove anomalies, and create a reliable foundation for churn modeling and segmentation.
+
+2. Data Sources
+- Customer Flight Activity.csv → Records of flights, points accumulated/redeemed, distances, and costs.
+- Customer Loyalty History.csv → Customer demographics, enrollment/cancellation details, loyalty tier, and CLV.
+- Merge Key: Loyalty Number
+
+3. Cleaning Workflow
+Step 1: Load & Merge
+- Used pd.read_csv() to load both files.
+- Merged on Loyalty Number with inner join to ensure only customers with both flight activity and loyalty profiles were included for anomaly checks.
+
+Step 2: Anomaly Detection & Fixes
+1. Redemption > Accumulation
+   - Rule: Redeemed points cannot exceed accumulated points.
+   - Fix: Capped Points Redeemed at Points Accumulated.
+
+2. Cancelled but Still Active
+   - Rule: No flights after cancellation.
+   - Fix: Reset cancellation dates to None if activity continued.
+
+3. Zero Flights but Redeemed Points
+   - Rule: Redemption without flights is unusual.
+   - Fix: Added flag Redeem_Without_Flights_Flag (1 = anomaly).
+
+4. Invalid Distances (≤0 km)
+   - Rule: Flights must have positive distance.
+   - Fix: Added flag Invalid_Distance_Flag only when Total Flights > 0.
+
+5. Enrollment vs Cancellation Mismatch
+   - Rule: Cancellation cannot occur before enrollment.
+   - Fix: Reset cancellation dates to None if mismatch detected.
+
+6. Missing Demographics
+   - Rule: Salary, Education, Gender, Marital Status should be complete.
+   - Fix:
+     - Imputed Salary with median by education group.
+     - Filled missing Education with mode.
+     - Added flag Missing_Demo_Flag for remaining gaps.
+
+Step 3: Save Cleaned Dataset
+- Exported cleaned dataset as cleaned_loyalty_data.csv using to_csv().
+- Preserved original row‑wise format with added flags.
+
+4. Churn Definition (Foundation for Day 2)
+Two churn definitions were established for future modeling:
+- Strict churn: A customer is churned if they have a recorded cancellation date.
+- Behavioral churn: A customer is churned if they show inactivity (no flights, no accumulation, no redemption) for a defined period, even without cancellation.
+
+This dual definition ensures both official cancellations and silent drop‑offs are captured.
+
+5. Business Rationale for Anomalies
+- Redeem > Accumulate: Indicates fraud, promotional misuse, or data entry error. Distorts CLV and loyalty economics.
+- Cancelled but Active: Suggests incorrect cancellation records or system lag. Mislabels active customers as churned.
+- Zero Flights but Redeemed Points: May reflect partner redemptions (non‑flight offers). Important to separate from flight‑based loyalty.
+- Invalid Distances: Impossible values undermine travel metrics and segment analysis.
+- Enrollment vs Cancellation Mismatch: Logical inconsistency that breaks churn timelines.
+- Missing Demographics: Reduces segmentation accuracy. Imputation ensures models remain robust while flags preserve transparency.
+
+6. Missing Demographics (Detailed Subsection)
+Demographic fields (Salary, Education, Gender, Marital Status) are essential for segmentation and churn modeling. Missing values were handled as follows:
+- Salary Imputation: Filled missing salaries with the median salary of customers in the same education group.
+- Education Imputation: Filled missing education with the most common (mode) education level.
+- Flagging Remaining Gaps: Added Missing_Demo_Flag column to mark rows where any demographic field remained missing after imputation.
+
+Example:
+Loyalty Number | Salary | Education | Gender | Marital Status | Missing_Demo_Flag
+201 | 50000 | Graduate | Male | Married | 0
+202 | NaN → 45000 (median for Graduate) | Graduate | Female | Single | 0
+203 | 60000 | NaN → Graduate (mode) | Male | Married | 0
+204 | NaN | NaN | NaN | NaN | 1
+
+Rationale:
+- Imputation ensures the dataset remains usable for modeling and segmentation.
+- Flagging preserves transparency, allowing analysts to treat incomplete records cautiously.
+- This balances data quality with business practicality.
+
+7. Functions & Concepts Learned
+- Data loading: pd.read_csv()
+- Merging: pd.merge() with how="inner"
+- Conditional updates: .loc[], .notna()
+- Flagging anomalies: .astype(int)
+- Group imputation: .groupby().transform(), .median()
+- Mode filling: .mode(), .fillna()
+- Row checks: .any(axis=1)
+- Export: .to_csv()
+
+8. Deliverables
+- Clean dataset (cleaned_loyalty_data.csv) with anomalies corrected and flagged.
+- Flags added:
+  - Redeem_Without_Flights_Flag
+  - Invalid_Distance_Flag
+  - Missing_Demo_Flag
+- Corrections applied: capped redemption, reset cancellation dates, imputed demographics.
+- Documentation: This report summarizing Day 1 cleaning strategy, churn definitions, and business rationale.
+
+9. Sample Output (Illustrative Rows)
+Loyalty Number | Total Flights | Points Accumulated | Points Redeemed | Distance | Cancellation Year | Redeem_Without_Flights_Flag | Invalid_Distance_Flag | Missing_Demo_Flag
+101 | 5 | 12000 | 12000 | 1500 | None | 0 | 0 | 0
+102 | 0 | 0 | 500 | 0 | None | 1 | 0 | 0
+103 | 3 | 8000 | 9000 → 8000 | 0 | None | 0 | 1 | 0
+104 | 2 | 4000 | 2000 | 700 | 2018 | 0 | 0 | 1
+105 | 4 | 10000 | 2000 | 1200 | 2015 → None | 0 | 0 | 0
+
+10. Next Steps (Day 2 Preview)
+- Feature engineering: flight frequency, redemption ratio, seasonal activity, loyalty tier encoding.
+- Churn definition flags (strict vs behavioral).
+- Train/test split for churn prediction models.
