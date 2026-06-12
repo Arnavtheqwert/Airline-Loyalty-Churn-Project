@@ -1,0 +1,72 @@
+TECHNICAL REPORT – AIRLINE LOYALTY CHURN PROJECT
+
+--------------------------------------------------
+FRAMING THE PROBLEM
+Airlines depend on loyalty programs to retain customers and maximize Customer Lifetime Value (CLV). Yet, many programs fail to detect disengagement early. Members may remain inactive despite holding cards, or high-value customers may churn without warning. The challenge was to predict churn, segment customers, and design retention strategies that both a CFO and a CMO could act upon. Our dataset covered Canadian loyalty members (2012–2018), including demographics, flight activity, and loyalty history.
+
+--------------------------------------------------
+DATA CLEANING DECISIONS
+We merged Customer Loyalty History and Flight Activity datasets. Several anomalies were identified:
+- Redeem > Accumulate: capped values to logical limits.
+- Cancelled but Active: reset cancellation dates.
+- Zero flights but redeemed points: flagged as anomalies.
+- Invalid distances: corrected or removed.
+- Missing demographics (salary, education): imputed with median values.
+
+Each decision was made with business rationale. For example, imputing salary ensured segmentation remained meaningful, while flagging anomalies prevented model bias.
+
+--------------------------------------------------
+MODELING LOGIC
+Churn was defined in two ways:
+- Strict Churn: cancellation date present.
+- Behavioral Churn: no flights or point activity for 12+ months.
+
+Features engineered included Flight Frequency, Redemption Ratio, Seasonality, Tier Code, and CLV Segment. We tested Logistic Regression, Random Forest, and Gradient Boosting. Random Forest performed best, balancing accuracy and interpretability. Feature importance highlighted Flight Frequency, Redemption Ratio, and CLV as top churn drivers.
+
+--------------------------------------------------
+SEGMENTATION CHOICES
+Segmentation combined behavioral signals with demographics:
+- CLV Segments: Low, Medium, High.
+- Churn Risk: Active vs. At-Risk.
+- Demographics: Salary, Education, Marital Status, Province.
+
+Profiles included:
+- High CLV, At-Risk, Married Professionals: valuable but disengaging.
+- Low CLV, Active Students: low risk, low value.
+- Medium CLV, At-Risk Families: moderate value, need targeted offers.
+
+--------------------------------------------------
+KEY FINDINGS
+- Flight Frequency is the strongest predictor of churn.
+- Redemption Ratio signals engagement; customers who redeem points are less likely to churn.
+- Geographic hotspots (e.g., British Columbia, Calgary) show clusters of high-value at-risk customers.
+- Demographics matter: higher salary and education correlate with higher CLV, but do not guarantee retention.
+
+--------------------------------------------------
+BUSINESS RECOMMENDATIONS
+Recommendation 1: Targeted Retention for High-Value At-Risk Customers
+- CFO: Protects revenue by focusing on customers with high CLV.
+- CMO: Personalized campaigns (bonus miles, tailored offers) for married professionals in BC and Calgary.
+
+Recommendation 2: Engagement Boost via Redemption Campaigns
+- CFO: Encourages point redemption, reducing churn risk without heavy cost.
+- CMO: Marketing can design “Redeem & Fly” promotions to re-activate inactive members.
+
+Recommendation 3: Seasonal Flight Incentives
+- CFO: Smooths revenue across quarters by incentivizing off-peak travel.
+- CMO: Campaigns tied to seasonal travel patterns (winter getaways, summer family trips).
+
+--------------------------------------------------
+DELIVERABLES
+- Cleaned & Engineered Dataset (Day 1–2).
+- Churn Prediction Models (Day 3–4).
+- Feature Importance Analysis (Day 4).
+- Segmentation Profiles (Day 8).
+- Geographic Profiling (Day 9).
+- Retention Recommendation Engine (Day 10).
+- Interactive Streamlit Dashboard (Day 12–13).
+- Final Documentation & Repo Packaging (Day 14).
+
+--------------------------------------------------
+CONCLUSION
+This project demonstrates an end-to-end workflow: from anomaly detection and churn definition to modeling, segmentation, and actionable retention strategies. The insights are designed for decision-makers, not data scientists—ensuring both CFOs and CMOs can align on strategies that protect revenue and strengthen customer relationships.
