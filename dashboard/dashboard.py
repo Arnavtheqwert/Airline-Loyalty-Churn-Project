@@ -22,14 +22,16 @@ if province_filter != "All":
     filtered_data = filtered_data[filtered_data['Province'] == province_filter]
 
 # Tabs
-tab1, tab2, tab3, tab4 = st.tabs(["📊 Churn Risk", "📈 Segment Profiles", "🌍 Geographic Map", "🎯 Recommendations"])
+tab1, tab2, tab3, tab4 = st.tabs(["📊 Churn Prediction", "📈 Customer segmentation", "🌍 Geographic Map", "🎯 Smart Retention"])
 
 with tab1:
     st.subheader("Churn Risk Distribution")
     churn_counts = filtered_data['Strict_Churn'].value_counts()
     fig, ax = plt.subplots()
-    sns.barplot(x=churn_counts.index, y=churn_counts.values, palette=["blue","red"], ax=ax)
+    sns.barplot(x=churn_counts.index, y=churn_counts.values, palette=["blue","red"], ax=ax, width = 0.2)
     ax.set_title("Churn vs Non-Churn")
+    ax.set_xlabel("Churn Risk (0 = Active, 1 = Churned)", fontsize=12)
+    ax.set_ylabel("Number of Customers", fontsize=12)
     st.pyplot(fig)
 
 with tab2:
